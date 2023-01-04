@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./Assets/img/ico/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Assets/css/reset.css" />
+    <link rel="stylesheet" href="./Assets/css/index.css" />
+    <title>Decodificador e codificador</title>
+  </head>
+  <body>
+    <main>
+      <section class="RecebeConteudo">
+        <h1>
+          <img
+            src="./Assets/img/VectorAluraLogo.png"
+            alt="Alura"
+            class="logo"
+          />
+        </h1>
+        <form class="formulario">
+          <h1><label for="ingreso">Insira seu texto</label></h1>
+          <textarea
+            name="entrada"
+            id="entrada"
+            placeholder="Digite seu texto aqui "
+            required
+          ></textarea>
+          <fieldset class="advertencia">
+            <img
+              src="./Assets/img/Vectorimportante.png"
+              alt="Importantne"
+              class="advertencia2"
+            />
+            <p>Só letras minusculas e sem acentos.</p>
+          </fieldset>
+          <fieldset class="botones">
+            <button class="boton-oscuro" id="encriptar">
+              <h4>Encriptar</h4>
+            </button>
+            <button class="boton-claro" id="desencriptar">
+              <h4>Desencriptar</h4>
+            </button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="MostraConteudo">
+        <form class="formulario2">
+          <fieldset class="segundo-off" id="block-text">
+            <textarea
+              name="saida"
+              id="saida"
+              cols="50"
+              rows="40"
+              class="texto"
+              readonly
+            ></textarea>
+          </fieldset>
+          <section class="centrar-ena" id="centro">
+            <img
+              src="./Assets/img/NadaEncontrado.png"
+              alt="Procurando mensagem"
+              class="imagen"
+            />
+            <h2 id="aviso">Nenhuma mensagem foi encontrada</h2>
+            <p>Ingressa o texto que deseja encriptar</p>
+          </section>
+          <button class="boton-claro2-off" id="copiar"><h4>Copiar</h4></button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por Danny Berrios Gomes da Silva</p>
+    </footer>
+  </body>
+</html>
